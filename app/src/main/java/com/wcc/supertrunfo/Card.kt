@@ -1,9 +1,13 @@
 package com.wcc.supertrunfo
 
+import com.wcc.supertrunfo.entities.Driver
+import com.wcc.supertrunfo.entities.Player
+import com.wcc.supertrunfo.entities.Vehicle
+
 class Card (
-    val vehicle: Vehicle,
-    val driver: Driver,
-    val player: Player
+        val vehicle: Vehicle,
+        val driver: Driver,
+        val player: Player
 )  {
 
     val label: String = "Card ${player.name}"
@@ -34,12 +38,12 @@ class Card (
     }
 
     private fun carMaxVelocity(): Int {
-            return if (vehicle.style == "sedã") {
-               vehicle.maxAcceleration
-            } else{
-                vehicle.maxAcceleration + 10
-            }
+        return if (vehicle.style == "sedã") {
+            vehicle.maxAcceleration
+        } else{
+            vehicle.maxAcceleration + 10
         }
+    }
 
     private fun initXP(): Int{
         return when(vehicle.type){
