@@ -1,13 +1,13 @@
-package com.wcc.supertrunfo
+package com.wcc.supertrunfo.interactors
 
 import com.wcc.supertrunfo.entities.Driver
 import com.wcc.supertrunfo.entities.Player
 import com.wcc.supertrunfo.entities.Vehicle
 
 class Card (
-        val vehicle: Vehicle,
-        val driver: Driver,
-        val player: Player
+       private val vehicle: Vehicle,
+       private val driver: Driver,
+       private val player: Player = Player("Player")
 )  {
 
     val label: String = "Card ${player.name}"

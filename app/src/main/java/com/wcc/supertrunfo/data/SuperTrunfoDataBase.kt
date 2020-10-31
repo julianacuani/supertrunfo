@@ -63,7 +63,7 @@ class SuperTrunfoDataBase {
 
     fun getAllDrivers(): List<Driver> {
         val driverOne = Driver(
-                40
+                40,
                 60,
                 10,
                 2,
